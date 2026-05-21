@@ -118,7 +118,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -246,617 +246,617 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-spritemap-v9_0
+      name: FighterBlue_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 151
-        width: 24
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 152
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9d9d0ed3e8751f770800000000000000
-      internalID: 8642785428335811033
+      spriteID: 7c67faed199e15f4fa1c73a83e1674b8
+      internalID: 1193347370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_1
+      name: FighterBlue_1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 151
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 52
+        y: 152
+        width: 28
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90a66534bd5864600800000000000000
-      internalID: 452195989371382281
+      spriteID: 0a483d42a43e27d4988371fb400124d3
+      internalID: 612724587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_2
+      name: FighterBlue_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 151
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 152
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6b6cce287d7787330800000000000000
-      internalID: 3708846060637832886
+      spriteID: ea211a11362d2284d9e26718772e6c9c
+      internalID: 2023542091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_3
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 100
-        width: 26
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93815e725dc75fa20800000000000000
-      internalID: 3095517573826287673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_4
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 151
-        width: 35
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ac7523a123677170800000000000000
-      internalID: 8176112644636638370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_5
+      name: FighterBlue_3
       rect:
         serializedVersion: 2
         x: 146
-        y: 100
+        y: 152
         width: 33
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07fb4e1c356616480800000000000000
-      internalID: -8907726078040817808
+      spriteID: 70e3d0691dc3b8c45a4960a469f69c02
+      internalID: 675971309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 151
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6d901b32814a1de0800000000000000
-      internalID: -1361703909733655189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_7
+      name: FighterBlue_4
       rect:
         serializedVersion: 2
         x: 193
-        y: 100
-        width: 28
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 152
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 731f86a574e3227d0800000000000000
-      internalID: -2944722730166456009
+      spriteID: 0b5c5bf19e5168441ab9615f33ffcc3f
+      internalID: 2095617831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_8
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 151
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ec601f9a258b0c20800000000000000
-      internalID: 3173776780516420838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_9
+      name: FighterBlue_5
       rect:
         serializedVersion: 2
         x: 239
-        y: 100
-        width: 25
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 152
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f0cbe8beb9b63f800800000000000000
-      internalID: 644977489060215823
+      spriteID: c2a660235a668bc48bac306ea5da178b
+      internalID: 724954627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_10
+      name: FighterBlue_6
       rect:
         serializedVersion: 2
-        x: 286
-        y: 150
-        width: 24
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 217cf38176d796bf0800000000000000
-      internalID: -330595215893084398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_11
-      rect:
-        serializedVersion: 2
-        x: 333
+        x: 287
         y: 151
-        width: 23
+        width: 22
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 189fc1e394ca898c0800000000000000
-      internalID: -3992251639089268351
+      spriteID: 172870e1a4741164e876afc0aa2c7e76
+      internalID: 942292587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_12
+      name: FighterBlue_7
       rect:
         serializedVersion: 2
-        x: 7
-        y: 100
-        width: 32
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 334
+        y: 152
+        width: 21
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 73fc1162bede56270800000000000000
-      internalID: 8243256287183359799
+      spriteID: 9ed59cbf1b22a0146bc2d911893f72c1
+      internalID: -565973470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_13
+      name: FighterBlue_8
       rect:
         serializedVersion: 2
-        x: 53
+        x: 8
+        y: 101
+        width: 30
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c0420dfbcb81b479a8e0349bc884de
+      internalID: 1209974962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 102
+        width: 29
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad20839f52c1e744b90fa3c2154b43b4
+      internalID: -1441560639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 101
+        width: 24
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9662416e7250694c99ec84787649be0
+      internalID: 1907397353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_11
+      rect:
+        serializedVersion: 2
+        x: 147
         y: 101
         width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5321f85f2975e0520800000000000000
-      internalID: 2670167917773918773
+      spriteID: 553b35dfcb12c264e912c3c6ffd7ce91
+      internalID: 261333716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_14
+      name: FighterBlue_12
       rect:
         serializedVersion: 2
-        x: 4
-        y: 57
-        width: 41
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 194
+        y: 101
+        width: 26
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86075c36c01f81930800000000000000
-      internalID: 4114303295118733416
+      spriteID: f3a742611718c57448d0079922b181ef
+      internalID: 791702500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_15
+      name: FighterBlue_13
       rect:
         serializedVersion: 2
-        x: 51
-        y: 51
-        width: 41
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 101
+        width: 23
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 59d67cfb45d0779c0800000000000000
-      internalID: -3929657492211536491
+      spriteID: b399a82bba08f9c4e9fa00189f954739
+      internalID: -1248002197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_16
+      name: FighterBlue_14
       rect:
         serializedVersion: 2
-        x: 97
-        y: 51
-        width: 30
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa95bb9f6ecb3a4c0800000000000000
-      internalID: -4277367520853534289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_17
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 51
+        x: 5
+        y: 58
         width: 39
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c516073d984df6460800000000000000
-      internalID: 7237236814630642012
+      spriteID: c1a25f90b93babc4a89b15aa2483069c
+      internalID: 409979983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_18
+      name: FighterBlue_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 39
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61037f622a3644e47871c43f83b4bcf1
+      internalID: -891726025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 52
+        width: 28
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60830053e4de0f47b9a329f3568b5b8
+      internalID: 1606940412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 52
+        width: 37
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca31e9cb3595aaa4e94830f000196c96
+      internalID: -9116263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_18
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 52
+        width: 32
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e460904c5f106647bb2e15609d41413
+      internalID: 924562567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_19
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 52
+        width: 28
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dd02563c625bb4395cd28daa42981c
+      internalID: 1315496211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 34
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69cce81c6b98c04e86f3b026b87556c
+      internalID: -1374921057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2
+        width: 36
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd417f9f5d5b2ab41a8b564561146a09
+      internalID: -966353775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2
+        width: 32
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce074d65004702469fc63f03730af6d
+      internalID: 465711576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2
+        width: 23
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad22f81275a3d945b453f3243e6632c
+      internalID: -930675925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_24
       rect:
         serializedVersion: 2
         x: 189
-        y: 51
-        width: 34
+        y: 2
+        width: 33
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db23b41c101bd4446a24741a3e24ed9e
+      internalID: -732886811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FighterBlue_25
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2
+        width: 37
         height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e397454da79206b60800000000000000
-      internalID: 7737229767347566910
+      spriteID: 7b84d482ca2f26044aafca846799fad2
+      internalID: -227096731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_19
+      name: FighterBlue_26
       rect:
         serializedVersion: 2
-        x: 235
-        y: 51
-        width: 30
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 285
+        y: 2
+        width: 27
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5c85bd307bd99230800000000000000
-      internalID: 3646186648451255390
+      spriteID: 9907522df9573bb4f9371a3397c3a16c
+      internalID: 1627231184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-spritemap-v9_20
+      name: FighterBlue_27
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1
-        width: 36
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 333
+        y: 2
+        width: 24
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d83a894435e5fa690800000000000000
-      internalID: -7588743135369845875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_21
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 1
-        width: 38
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0987880c2ae308560800000000000000
-      internalID: 7313914663585478800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_22
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 1
-        width: 34
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8afbfbf6497f09c10800000000000000
-      internalID: 2058417246610374568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_23
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 1
-        width: 25
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7dc73d44f26c8bbb0800000000000000
-      internalID: -4919964686581793577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_24
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 1
-        width: 35
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ee53b3eb9795ddf0800000000000000
-      internalID: -156051916278505752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_25
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 1
-        width: 39
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15da1159275f9f730800000000000000
-      internalID: 4033524813763030353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_26
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 1
-        width: 29
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02cacf524216e8850800000000000000
-      internalID: 6381144529914604576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-spritemap-v9_27
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 1
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d38c3df8db3ae49a0800000000000000
-      internalID: -6246875598559131587
+      spriteID: 0f7564b4cb947be4086950ff3a6f8669
+      internalID: 1404151887
       vertices: []
       indices: 
       edges: []
@@ -865,7 +865,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8a32856413f49604fb8b5d4b38b22bb2
     internalID: 0
     vertices: []
     indices: 
@@ -873,36 +873,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      player-spritemap-v9_0: 8642785428335811033
-      player-spritemap-v9_1: 452195989371382281
-      player-spritemap-v9_10: -330595215893084398
-      player-spritemap-v9_11: -3992251639089268351
-      player-spritemap-v9_12: 8243256287183359799
-      player-spritemap-v9_13: 2670167917773918773
-      player-spritemap-v9_14: 4114303295118733416
-      player-spritemap-v9_15: -3929657492211536491
-      player-spritemap-v9_16: -4277367520853534289
-      player-spritemap-v9_17: 7237236814630642012
-      player-spritemap-v9_18: 7737229767347566910
-      player-spritemap-v9_19: 3646186648451255390
-      player-spritemap-v9_2: 3708846060637832886
-      player-spritemap-v9_20: -7588743135369845875
-      player-spritemap-v9_21: 7313914663585478800
-      player-spritemap-v9_22: 2058417246610374568
-      player-spritemap-v9_23: -4919964686581793577
-      player-spritemap-v9_24: -156051916278505752
-      player-spritemap-v9_25: 4033524813763030353
-      player-spritemap-v9_26: 6381144529914604576
-      player-spritemap-v9_27: -6246875598559131587
-      player-spritemap-v9_3: 3095517573826287673
-      player-spritemap-v9_4: 8176112644636638370
-      player-spritemap-v9_5: -8907726078040817808
-      player-spritemap-v9_6: -1361703909733655189
-      player-spritemap-v9_7: -2944722730166456009
-      player-spritemap-v9_8: 3173776780516420838
-      player-spritemap-v9_9: 644977489060215823
+      FighterBlue_0: 1193347370
+      FighterBlue_1: 612724587
+      FighterBlue_10: 1907397353
+      FighterBlue_11: 261333716
+      FighterBlue_12: 791702500
+      FighterBlue_13: -1248002197
+      FighterBlue_14: 409979983
+      FighterBlue_15: -891726025
+      FighterBlue_16: 1606940412
+      FighterBlue_17: -9116263
+      FighterBlue_18: 924562567
+      FighterBlue_19: 1315496211
+      FighterBlue_2: 2023542091
+      FighterBlue_20: -1374921057
+      FighterBlue_21: -966353775
+      FighterBlue_22: 465711576
+      FighterBlue_23: -930675925
+      FighterBlue_24: -732886811
+      FighterBlue_25: -227096731
+      FighterBlue_26: 1627231184
+      FighterBlue_27: 1404151887
+      FighterBlue_3: 675971309
+      FighterBlue_4: 2095617831
+      FighterBlue_5: 724954627
+      FighterBlue_6: 942292587
+      FighterBlue_7: -565973470
+      FighterBlue_8: 1209974962
+      FighterBlue_9: -1441560639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
