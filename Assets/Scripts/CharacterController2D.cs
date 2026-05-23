@@ -6,56 +6,65 @@ using UnityEngine.InputSystem;
 public class CharacterController2D : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 3.0f;
+    [SerializeField] float jumpVelociy = 5f;
 
-    [SerializeField] InputActionReference move;
-    [SerializeField] InputActionReference jump;
-    [SerializeField] InputActionReference punch;
+    [SerializeField] float groundCheckDistance = 0.2f;
+    [SerializeField] LayerMask groundLayerMask = Physics2D.DefaultRaycastLayers;
 
     Rigidbody2D rb2D;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        move.action.performed += Onmove;
-        move.action.started += Onmove;
-        move.action.canceled += Onmove;
 
-        jump.action.performed += OnJump;
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-        punch.action.performed += OnPunch;
     }
-    private void OnEnable()
-    {
-        move.action.Enable();
-        jump.action.Enable();
-        punch.action.Enable();
-    }
+
 
     void Start()
     {
         
     }
+
+    const float moveThreshold = 0.1f;
+
     void Update()
     {
         rb2D.linearVelocityX = rawMove.x * movementSpeed;
+        bool isMoving = Mathf.Abs(rawMove.x) > moveThreshold;
+        //animator.SetBool("isRunning", Mathf.Abs(rawMove.x) > moveThreshold);
+        animator.SetBool("isRunning", isMoving);
+
+        if (isMoving)
+        {
+            spriteRenderer.flipX = rawMove.x < 0f;
+        }
+
+        animator.SetBool("isGrounded", IsGrounded());
     }
-    private void OnDisable()
+
+    bool IsGrounded()
     {
-        move.action.Disable();
-        jump.action.Disable();
-        punch.action.Disable();
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayerMask);
+
+        return hit.collider != null;
     }
 
     Vector2 rawMove;
-    private void Onmove(InputAction.CallbackContext ctx)
+
+    public void SetRawMove(Vector2 rawMove)
     {
-        rawMove = ctx.ReadValue<Vector2>();
+        this.rawMove = rawMove;
     }
-    private void OnJump(InputAction.CallbackContext ctx)
+
+    internal void Jump()
     {
-        throw new NotImplementedException();
-    }
-    private void OnPunch(InputAction.CallbackContext cxt)
-    {
-        throw new NotImplementedException();
+        if (IsGrounded())
+        {
+            rb2D.linearVelocityY = jumpVelociy;
+        }
     }
 }
