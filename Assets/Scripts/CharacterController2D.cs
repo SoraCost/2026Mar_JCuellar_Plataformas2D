@@ -21,6 +21,12 @@ public class CharacterController2D : MonoBehaviour
     Rigidbody2D rb2D;
     Animator animator;
     SpriteRenderer spriteRenderer;
+
+    [Header("Respawn")]
+    [SerializeField] bool Enemy;
+
+    Life life;
+
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -31,6 +37,28 @@ public class CharacterController2D : MonoBehaviour
         leftHit.gameObject.SetActive(false);
         rightHit.gameObject.SetActive(false);
 
+        life = GetComponent<Life>();
+
+    }
+
+    private void OnEnable()
+    {
+        life.onLifeDepleted.AddListener(OnLifeDepleted);
+    }
+
+    private void OnLifeDepleted(float arg0)
+    {
+        gameObject.SetActive(false);
+        if(Enemy != true)
+        {
+            Invoke(nameof(Resurrect), 3f);
+        }
+    }
+
+    void Resurrect()
+    {
+        gameObject.SetActive(true);
+        life.Restart();
     }
 
 

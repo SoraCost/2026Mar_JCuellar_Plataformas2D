@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: a1f60711970dcbf44801847e2c512f78, type: 2}
+    - target: {fileID: 4104314638022597309, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
+      propertyPath: Enemy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5357295865480230914, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
       propertyPath: m_Name
       value: RedEnemy Variant
@@ -75,6 +79,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5357295865480230914, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4870056680391488262}
+    - targetCorrespondingSourceObject: {fileID: 5357295865480230914, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2441584963968778410}
   m_SourcePrefab: {fileID: 100100000, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
 --- !u!1 &2181092112972800081 stripped
 GameObject:
@@ -95,3 +102,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
   attackDistance: 0.1
   target: {fileID: 2315559545015054200, guid: deaa47dec4d7fad41bab77d626f4e4c9, type: 3}
+--- !u!114 &2441584963968778410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181092112972800081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7db0ac04dc3681458f2f242cdcad6b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Life
+  startLife: 1
+  damagePerHit: 0.3
+  onLifeChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onLifeDepleted:
+    m_PersistentCalls:
+      m_Calls: []
+  debugReceiveDamage: 0

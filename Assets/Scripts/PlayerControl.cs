@@ -10,6 +10,9 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] InputActionReference jump;
     [SerializeField] InputActionReference punch;
 
+    Life life;
+
+    
     private void Awake()
     {
         characterController2D = GetComponent<CharacterController2D>();
@@ -21,6 +24,8 @@ public class PlayerControl : MonoBehaviour
         jump.action.performed += OnJump;
 
         punch.action.performed += OnPunch;
+
+        //life = GetComponent<Life>();
     }
 
     private void OnEnable()
@@ -28,7 +33,21 @@ public class PlayerControl : MonoBehaviour
         move.action.Enable();
         jump.action.Enable();
         punch.action.Enable();
+
+        //life.onLifeDepleted.AddListener(OnLifeDepleted);
     }
+
+    //private void OnLifeDepleted(float arg0)
+    //{
+    //    gameObject.SetActive(false);
+    //    Invoke(nameof(Resurrect), 3f);
+    //}
+
+    //void Resurrect()
+    //{
+    //    gameObject.SetActive(true);
+    //    life.Restart();
+    //}
 
     private void OnDisable()
     {
