@@ -5,11 +5,18 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
+    [Header("Movement Settings")]
     [SerializeField] float movementSpeed = 3.0f;
     [SerializeField] float jumpVelociy = 5f;
 
+    [Header("Ground Check")]
     [SerializeField] float groundCheckDistance = 0.2f;
     [SerializeField] LayerMask groundLayerMask = Physics2D.DefaultRaycastLayers;
+
+    [Header("Combat")]
+    [SerializeField] Transform leftHit;
+    [SerializeField] Transform rightHit;
+
 
     Rigidbody2D rb2D;
     Animator animator;
@@ -21,12 +28,16 @@ public class CharacterController2D : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
+        leftHit.gameObject.SetActive(false);
+        rightHit.gameObject.SetActive(false);
+
     }
 
 
     void Start()
     {
-        
+
+
     }
 
     const float moveThreshold = 0.1f;
@@ -67,4 +78,34 @@ public class CharacterController2D : MonoBehaviour
             rb2D.linearVelocityY = jumpVelociy;
         }
     }
+
+    internal void Punch()
+    {
+        animator.SetTrigger("Punch");
+        //animator.ResetTrigger("Punch");
+    }
+
+    const float deactivateHitDelay = 0.25f;
+    public void OnAnimationPunch()
+    {
+        if (spriteRenderer.flipX)
+        {
+            leftHit.gameObject.SetActive(true);
+            Invoke(nameof(DeactivateHit), deactivateHitDelay);
+            Debug.Log("OnAnimationPuch Left");
+        }
+        else
+        {
+            rightHit.gameObject.SetActive(true);
+            Invoke(nameof(DeactivateHit), deactivateHitDelay);
+            Debug.Log("OnAnimationPuch Right");
+        }
+    }
+
+    void DeactivateHit()
+    {
+        leftHit.gameObject.SetActive(false);
+        rightHit.gameObject.SetActive(false);
+    }
+
 }

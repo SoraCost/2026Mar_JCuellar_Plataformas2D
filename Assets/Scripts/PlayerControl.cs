@@ -54,6 +54,6 @@ public class PlayerControl : MonoBehaviour
     }
     private void OnPunch(InputAction.CallbackContext cxt)
     {
-        throw new NotImplementedException();
+        characterController2D.Punch();
     }
 }
