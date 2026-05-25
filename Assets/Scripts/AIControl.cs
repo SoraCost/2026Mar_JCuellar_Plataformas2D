@@ -7,9 +7,17 @@ public class AIControl : MonoBehaviour
     [SerializeField] Transform target;
     CharacterController2D characterController2D;
 
+    CharacterController2D targetController;
+
     internal void SetTarget(Transform target)
     {
         this.target = target;
+
+        // En el momento que detectamos al target, "sacamos" su componente CharacterController2D
+        if (this.target != null)
+        {
+            targetController = this.target.GetComponent<CharacterController2D>();
+        }
     }
 
     private void Awake()
@@ -33,10 +41,11 @@ public class AIControl : MonoBehaviour
             if (Mathf.Abs(target.transform.position.x - transform.position.x) < attackDistance)
             {
                 rawMove = Vector2.zero;
-                characterController2D.Punch();
+                characterController2D.Punch(); //Golpear
             }
         }
         characterController2D.SetRawMove(rawMove);
+
     }
 
 }

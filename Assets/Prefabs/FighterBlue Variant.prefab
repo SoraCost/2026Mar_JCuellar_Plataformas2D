@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FighterBlue Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5703076626173982746, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
+      propertyPath: damagePerHit
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

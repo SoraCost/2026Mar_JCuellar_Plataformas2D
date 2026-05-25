@@ -7,7 +7,7 @@ public class CharacterController2D : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] float movementSpeed = 3.0f;
-    [SerializeField] float jumpVelociy = 5f;
+    [SerializeField] float jumpVelociy = 3f;
 
     [Header("Ground Check")]
     [SerializeField] float groundCheckDistance = 0.2f;
@@ -17,7 +17,6 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] Transform leftHit;
     [SerializeField] Transform rightHit;
 
-
     Rigidbody2D rb2D;
     Animator animator;
     SpriteRenderer spriteRenderer;
@@ -26,7 +25,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] bool Enemy;
 
     Life life;
-
+    public bool isDead = false;
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -48,15 +47,35 @@ public class CharacterController2D : MonoBehaviour
 
     private void OnLifeDepleted(float arg0)
     {
-        gameObject.SetActive(false);
-        if(Enemy != true)
+        //gameObject.SetActive(false);
+        //if (Enemy != true)
+        //{
+        //    animator.SetTrigger("isDeath");
+        //    Invoke(nameof(Resurrect), 3f);
+        //}
+
+        if (Enemy != true)
         {
-            Invoke(nameof(Resurrect), 3f);
+            StartCoroutine(DeathSequence());
         }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private System.Collections.IEnumerator DeathSequence()
+    {
+        isDead = true; // Bloqueamos el movimiento
+        Death(); // Activamos el trigger "isDeath" en el Animator
+        yield return new WaitForSeconds(1f);
+        gameObject.SetActive(false);
+        Invoke(nameof(Resurrect), 3f);
     }
 
     void Resurrect()
     {
+        isDead = false;
         gameObject.SetActive(true);
         life.Restart();
     }
@@ -72,6 +91,8 @@ public class CharacterController2D : MonoBehaviour
 
     void Update()
     {
+        if (isDead) return;
+
         rb2D.linearVelocityX = rawMove.x * movementSpeed;
         bool isMoving = Mathf.Abs(rawMove.x) > moveThreshold;
         //animator.SetBool("isRunning", Mathf.Abs(rawMove.x) > moveThreshold);
@@ -114,6 +135,7 @@ public class CharacterController2D : MonoBehaviour
     }
 
     const float deactivateHitDelay = 0.25f;
+
     public void OnAnimationPunch()
     {
         if (spriteRenderer.flipX)
@@ -128,6 +150,11 @@ public class CharacterController2D : MonoBehaviour
             Invoke(nameof(DeactivateHit), deactivateHitDelay);
             Debug.Log("OnAnimationPuch Right");
         }
+    }
+
+    internal void Death()
+    {
+        animator.SetTrigger("isDeath");
     }
 
     void DeactivateHit()

@@ -34,20 +34,8 @@ public class PlayerControl : MonoBehaviour
         jump.action.Enable();
         punch.action.Enable();
 
-        //life.onLifeDepleted.AddListener(OnLifeDepleted);
     }
 
-    //private void OnLifeDepleted(float arg0)
-    //{
-    //    gameObject.SetActive(false);
-    //    Invoke(nameof(Resurrect), 3f);
-    //}
-
-    //void Resurrect()
-    //{
-    //    gameObject.SetActive(true);
-    //    life.Restart();
-    //}
 
     private void OnDisable()
     {
@@ -73,6 +61,6 @@ public class PlayerControl : MonoBehaviour
     }
     private void OnPunch(InputAction.CallbackContext cxt)
     {
-        characterController2D.Punch();
+        characterController2D.Punch(); //Golpear
     }
 }
