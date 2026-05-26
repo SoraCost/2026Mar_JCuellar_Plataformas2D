@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: ed8e0fa2d1f71d34cb193ccd40ba6d65, type: 2}
+    - target: {fileID: 4104314638022597309, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
+      propertyPath: Enemy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5357295865480230914, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}
       propertyPath: m_Name
       value: FighterRed Variant
@@ -113,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIControl
   attackDistance: 0.1
-  target: {fileID: 0}
+  target: {fileID: 2315559545015054200, guid: deaa47dec4d7fad41bab77d626f4e4c9, type: 3}
 --- !u!114 &8047702354665449083 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5703076626173982746, guid: 1235a2be4ed3627429c18ab1278a85d2, type: 3}

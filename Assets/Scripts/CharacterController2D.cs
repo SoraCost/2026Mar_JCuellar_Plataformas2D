@@ -10,7 +10,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] float jumpVelociy = 3f;
 
     [Header("Ground Check")]
-    [SerializeField] float groundCheckDistance = 0.2f;
+    [SerializeField] float groundCheckDistance = 1f;
     [SerializeField] LayerMask groundLayerMask = Physics2D.DefaultRaycastLayers;
 
     [Header("Combat")]
@@ -43,6 +43,8 @@ public class CharacterController2D : MonoBehaviour
     private void OnEnable()
     {
         life.onLifeDepleted.AddListener(OnLifeDepleted);
+
+        isDead = false;
     }
 
     private void OnLifeDepleted(float arg0)
@@ -108,7 +110,20 @@ public class CharacterController2D : MonoBehaviour
 
     bool IsGrounded()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayerMask);
+        Vector2 direccionSuelo;
+
+        // 1. Si la gravedad es negativa (-1), disparamos el rayo hacia ARRIBA
+        if (rb2D.gravityScale < 0)
+        {
+            direccionSuelo = Vector2.up;
+        }
+        // 2. Si la gravedad es normal (1), disparamos el rayo hacia ABAJO
+        else
+        {
+            direccionSuelo = Vector2.down;
+        }
+        
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direccionSuelo, groundCheckDistance, groundLayerMask);
 
         return hit.collider != null;
     }
@@ -123,9 +138,16 @@ public class CharacterController2D : MonoBehaviour
     internal void Jump()
     {
         if (IsGrounded())
-        {
-            rb2D.linearVelocityY = jumpVelociy;
-        }
+            // Si la gravedad está invertida, el salto debe tener fuerza NEGATIVA (para saltar hacia abajo)
+            if (rb2D.gravityScale < 0)
+            {
+                rb2D.linearVelocityY = -jumpVelociy;
+            }
+            // Si la gravedad es normal, el salto tiene fuerza POSITIVA (salto normal hacia arriba)
+            else
+            {
+                rb2D.linearVelocityY = jumpVelociy;
+            }
     }
 
     internal void Punch()

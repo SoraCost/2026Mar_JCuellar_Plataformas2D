@@ -34,6 +34,8 @@ public class Life : MonoBehaviour
     private void OnEnable()
     {
         hurtCollider.onHitReceived.AddListener(OnHitReceived);
+
+        Restart();
     }
 
     private void OnDisable()
